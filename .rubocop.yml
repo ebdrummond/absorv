@@ -8,6 +8,10 @@ AllCops:
 Documentation:
   Enabled: false
 
+Metrics/AbcSize:
+  Exclude:
+    - "db/**/*" # Sometimes database migrations are complex. Go figure.
+
 Metrics/LineLength:
   Exclude:
     - "config/**/*"
@@ -17,6 +21,10 @@ Metrics/MethodLength:
   Max: 12
   Exclude:
     - "db/**/*"
+
+Style/SingleSpaceBeforeFirstArg:
+  Exclude:
+    - "db/migrate/*" # We often add extra spaces for alignment in migrations.
 
 Style/StringLiterals:
   EnforcedStyle: double_quotes
