@@ -1,0 +1,11 @@
+.bundle
+.DS_Store
+.ruby-version
+
+/coverage/
+/log
+/spec/tmp
+/tmp
+
+config/database.yml
+config/secrets.yml

@@ -1,0 +1,22 @@
+AllCops:
+  Exclude:
+    - "bin/**/*"
+    - "db/schema.rb"
+    - "vendor/**/*"
+  RunRailsCops: true
+
+Documentation:
+  Enabled: false
+
+Metrics/LineLength:
+  Exclude:
+    - "config/**/*"
+    - "db/**/*"
+
+Metrics/MethodLength:
+  Max: 12
+  Exclude:
+    - "db/**/*"
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
