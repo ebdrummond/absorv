@@ -1,12 +1,14 @@
 class User < ActiveRecord::Base
   devise :confirmable,
-         :database_authenticatable,
-         :lockable,
-         :registerable,
-         :recoverable,
-         :rememberable,
-         :trackable,
-         :validatable
+    :database_authenticatable,
+    :lockable,
+    :registerable,
+    :recoverable,
+    :rememberable,
+    :trackable,
+    :validatable
+
+  has_many :target_behaviors, dependent: :destroy
 end
 
 # == Schema Information

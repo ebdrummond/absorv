@@ -4,3 +4,4 @@
   = link_to t("devise.sign_in"), new_user_session_path
 - else
   = link_to t("devise.sign_out"), destroy_user_session_path, method: :delete
+  %p= link_to text("manage_target_behaviors"), target_behaviors_path

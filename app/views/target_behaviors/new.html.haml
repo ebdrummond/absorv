@@ -1,0 +1,6 @@
+= simple_form_for @target_behavior, url: target_behaviors_path, method: :post do |f|
+  = f.input :name
+  = f.input :positive
+  = f.input :goal
+  = f.input :notes
+  = f.button :submit

@@ -22,6 +22,17 @@ Metrics/MethodLength:
   Exclude:
     - "db/**/*"
 
+Style/AlignParameters:
+  EnforcedStyle: with_fixed_indentation
+
+Style/BlockDelimiters:
+  Exclude:
+    - "spec/**/*"
+
+Style/MultilineBlockLayout:
+  Exclude:
+    - "spec/**/*"
+
 Style/SingleSpaceBeforeFirstArg:
   Exclude:
     - "db/migrate/*" # We often add extra spaces for alignment in migrations.

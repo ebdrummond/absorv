@@ -11,10 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150829025439) do
+ActiveRecord::Schema.define(version: 20150902194740) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "target_behaviors", force: :cascade do |t|
+    t.integer  "user_id"
+    t.string   "name",                       null: false
+    t.boolean  "positive",   default: false, null: false
+    t.text     "goal"
+    t.text     "notes"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "target_behaviors", ["user_id"], name: "index_target_behaviors_on_user_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
