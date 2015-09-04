@@ -7,6 +7,7 @@ gem "rails", "4.2.4"
 gem "turbolinks"
 
 # Authentication / Authorization
+gem "cancancan", "~> 1.10"
 gem "devise"
 
 # Behavior
@@ -16,7 +17,9 @@ gem "jquery-ui-rails"
 gem "uglifier", ">= 1.3.0"
 
 # Style
+gem "bootstrap-sass", "~> 3.3.5"
 gem "sass-rails", "~> 5.0"
+gem "simple_form"
 
 # Views
 gem "haml-rails"
@@ -31,6 +34,7 @@ end
 
 group :development, :test do
   gem "factory_girl_rails"
+  gem "faker"
   gem "pry-rails"
   gem "pry-stack_explorer"
   gem "rspec-rails", "~> 3.0"

@@ -21,3 +21,11 @@
 
 en:
   hello: "Hello world"
+
+  activerecord:
+    errors:
+      models:
+        target_behavior:
+          attributes:
+            name:
+              duplicate_name: you already have a target behavior with this name

@@ -1,0 +1,5 @@
+en:
+  views:
+    target_behaviors:
+      index:
+        new_behavior: Create new target behavior

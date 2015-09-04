@@ -1,5 +1,10 @@
 FactoryGirl.define do
   factory :user do
+    email { Faker::Internet.email }
+    name { Faker::Name.first_name }
+    password "Password"
+
+    after(:build) { |user| user.confirm }
   end
 end
 
