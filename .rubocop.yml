@@ -13,6 +13,7 @@ Metrics/AbcSize:
     - "db/**/*" # Sometimes database migrations are complex. Go figure.
 
 Metrics/LineLength:
+  Max: 90
   Exclude:
     - "config/**/*"
     - "db/**/*"
