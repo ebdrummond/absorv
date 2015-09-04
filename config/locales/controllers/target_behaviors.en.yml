@@ -1,0 +1,5 @@
+en:
+  controllers:
+    target_behaviors:
+      create_success: "Successfully created a target behavior for %{behavior_name}"
+      create_failure: "Failed to save target behavior"

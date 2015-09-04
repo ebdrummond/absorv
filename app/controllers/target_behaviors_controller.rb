@@ -7,9 +7,10 @@ class TargetBehaviorsController < ApplicationController
 
   def create
     if @target_behavior.save
-      redirect_to target_behaviors_path, notice: "Target behavior created"
+      redirect_to target_behaviors_path,
+        notice: text("create_success", behavior_name: @target_behavior.name)
     else
-      render :new, alert: "Target behavior failed to save"
+      render :new, alert: text("create_failure")
     end
   end
 
