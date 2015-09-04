@@ -1,0 +1,13 @@
+machine:
+  ruby:
+    version: 2.2.2
+
+checkout:
+  post:
+    - cp config/secrets.yml.circle config/secrets.yml
+
+test:
+  override:
+    - bundle exec rspec spec
+      --color
+
